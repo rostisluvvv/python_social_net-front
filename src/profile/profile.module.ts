@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProfileRoutingModule } from './profile-routing.module';
 import { WallComponent } from './components/wall/wall.component';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { WallComponent } from './components/wall/wall.component';
   ],
   imports: [
     CommonModule,
-    ProfileRoutingModule
+    ProfileRoutingModule,
+    MatSlideToggleModule,
   ]
 })
 export class ProfileModule { }
