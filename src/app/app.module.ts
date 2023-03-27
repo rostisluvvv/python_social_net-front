@@ -8,6 +8,7 @@ import { ProfileModule } from '../profile/profile.module';
 import { NotfoundComponent } from '../shared/components/notfound/notfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+
     AppRoutingModule,
     AuthModule,
     ProfileModule,
