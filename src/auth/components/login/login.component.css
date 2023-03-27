@@ -1,0 +1,16 @@
+.login-area {
+  background-color: #dc4734;
+  padding: 15px 30px;
+
+}
+
+.login-area .single-field {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+  color: #fff
+
+
+}
