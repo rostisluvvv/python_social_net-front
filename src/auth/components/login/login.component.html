@@ -2,7 +2,7 @@
 
   <div class="login-area">
     <input class="single-field" type="text" formControlName="username" placeholder="username">
-    <mat-error *ngIf="form.get('username').touched">
+    <mat-error *ngIf="form.get('username')?.touched">
       Please enter a valid login
     </mat-error>
   </div>
@@ -10,7 +10,7 @@
   <div class="login-area">
     <input class="single-field" type="password" formControlName="password"
            placeholder="password">
-    <mat-error *ngIf="form.get('password').touched">
+    <mat-error *ngIf="form.get('password')?.touched">
       Please enter password
     </mat-error>
 
