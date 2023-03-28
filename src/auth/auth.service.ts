@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from '../environments';
+import { environment } from '../environments/environment';
 import { Observable } from 'rxjs';
 import { Login, Registration, Token } from './models';
 
@@ -12,7 +12,6 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(model: Login): Observable<Token> {
-    return this.http.post<Login>('${environment.url}/auth/jwt/create/');
+    return this.http.post<Token>(`${environment.url}/auth/jwt/create/`, model);
   }
-
 }
