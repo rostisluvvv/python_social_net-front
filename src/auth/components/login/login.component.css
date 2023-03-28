@@ -5,6 +5,10 @@ h6{
   padding-left: 70px;
 }
 
+.login-image {
+  background-color: #dc4734;
+}
+
 .login-form{
   display: flex;
 }
@@ -33,3 +37,5 @@ input:focus, textarea:focus {
   color: white;
 
 }
+
+
