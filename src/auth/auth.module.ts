@@ -19,11 +19,11 @@ import { VerifyComponent } from './verify/verify.component';
     CommonModule,
     AuthRoutingModule,
     FormsModule,
-
     ReactiveFormsModule,
     MatGridListModule,
     MatFormFieldModule,
     MatButtonModule,
+
   ],
 
 })
