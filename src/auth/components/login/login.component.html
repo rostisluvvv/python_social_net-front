@@ -1,19 +1,19 @@
-<form class="example-form" [formGroup]="form" (ngSubmit)="submit()">
+<form class="login-form" [formGroup]="form" (ngSubmit)="submit()">
 
   <div class="login-area">
-    <input class="single-field" type="text" formControlName="username" placeholder="username">
-    <mat-error *ngIf="form.get('username')?.touched">
+    <input class="single-field" type="text" formControlName="username"
+           placeholder="username">
+    <span class="field-error" *ngIf="form.get('username')?.touched">
       Please enter a valid login
-    </mat-error>
+    </span>
   </div>
 
   <div class="login-area">
     <input class="single-field" type="password" formControlName="password"
            placeholder="password">
-    <mat-error *ngIf="form.get('password')?.touched">
+    <span class="field-error" *ngIf="form.get('password')?.touched">
       Please enter password
-    </mat-error>
-
+    </span>
   </div>
 
   <button mat-flat-button type="submit" [disabled]="form.invalid">Войти
