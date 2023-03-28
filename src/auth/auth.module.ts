@@ -10,10 +10,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { VerifyComponent } from './verify/verify.component';
 
 
 @NgModule({
-  declarations: [LoginComponent, AuthLayoutComponent, RegistrationComponent, LoginLayoutComponent],
+  declarations: [LoginComponent, AuthLayoutComponent, RegistrationComponent, LoginLayoutComponent, VerifyComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

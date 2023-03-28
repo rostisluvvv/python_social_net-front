@@ -14,4 +14,10 @@ export class AuthService {
   login(model: Login): Observable<Token> {
     return this.http.post<Token>(`${environment.url}/auth/jwt/create/`, model);
   }
+
+   registration(model: Registration): Observable<any> {
+    return this.http.post<any>(`${environment.url}/auth/users/`, model);
+  }
+
+
 }
