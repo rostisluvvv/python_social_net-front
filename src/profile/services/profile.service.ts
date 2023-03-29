@@ -1,18 +1,13 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment';
-import { Observable } from 'rxjs';
+
+import { BaseService } from '../../app/services/base-service';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProfileService {
+export class ProfileService extends BaseService<any>{
 
-  constructor(private http: HttpClient) { }
-
-//  login(model: Login): Observable<Token> {
-//    return this.http.post<Token>(`${environment.url}/auth/jwt/create/`, model);
-//  }
+  protected override url = 'api/v1/profile';
 
 }
