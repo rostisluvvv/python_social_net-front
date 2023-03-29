@@ -7,20 +7,19 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 
 const routes: Routes = [
   {
-    path: 'profile', component: BaseLayoutComponent, children: [
-
+    path: 'profile',
+    component: BaseLayoutComponent,
+    children: [
       {
-        path: 'edit', component: EditProfileComponent
+        path: 'edit',
+        component: EditProfileComponent
       },
-
       {
-        path: 'wall', component: WallComponent
-      },
-
+        path: 'wall',
+        component: WallComponent
+      }
     ]
-  },
-
-
+  }
 ];
 
 @NgModule({
