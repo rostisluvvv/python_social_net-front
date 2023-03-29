@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './login-layout.component.html',
   styleUrls: ['./login-layout.component.css']
 })
-export class LoginLayoutComponent {
+export class LoginLayoutComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }

@@ -15,6 +15,8 @@ export class EditProfileComponent implements OnInit {
   form: FormGroup
   aSub: Subscription;
   errorRes: object | null = null
+  id = 1;
+
 
  constructor(private fb: FormBuilder, private profileService: ProfileService) { }
 
@@ -31,16 +33,16 @@ export class EditProfileComponent implements OnInit {
       github: [null],
       birthday: [null],
       gender: [null] ,
-      technology: this.fb.array([null, [Validators.required]]),
+      technology:  this.fb.array([1]), // this.fb.array([null, [Validators.required]]),
 
     });
   }
     submit (): void {
 
-//    this.aSub = this.profileService.registration(this.form.value).subscribe(
-//      res => alert('Send email'),
-//      error => console.log(error.error)
-//    );
+    this.aSub = this.profileService.put(this.form.value, this.id).subscribe(
+      res => alert('Save'),
+      error => console.log(error.error)
+    );
 
   }
 }
