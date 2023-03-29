@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text" formControlName="username">
+  <input type="text" formControlName="first_name">
+  <input type="text" formControlName="last_name">
+  <input type="text" formControlName="middle_name">
+  <input type="text" formControlName="phone">
+  <input type="text" formControlName="bio">
+  <input type="text" formControlName="github">
+  <input type="text" formControlName="birthday">
+  <input type="text" formControlName="gender">
+  <input type="text" formControlName="technology">
+
+  <button class="submit-btn" type="submit" [disabled]="form.invalid">Изменить</button>
+</form>
